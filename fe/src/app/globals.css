@@ -24,3 +24,19 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.btn {
+  @apply px-4 py-2 rounded font-semibold;
+}
+
+.btn[data-variant="primary"] {
+  @apply bg-blue-500 text-white hover:bg-blue-600;
+}
+
+.btn[data-variant="secondary"] {
+  @apply bg-gray-500 text-white hover:bg-gray-600;
+}
+
+.btn[data-variant="danger"] {
+  @apply bg-red-500 text-white hover:bg-red-600 font-bold;
+}
